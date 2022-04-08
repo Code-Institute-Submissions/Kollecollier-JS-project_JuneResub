@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,600&family=BIZ+UDGothic&family=Cormorant+Garamond:wght@500&display=swap');
+
+
+
+html {
+    min-width: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+}
+
+header {
+    text-align: center;
+    height: 50px;
+    letter-spacing: 0.5rem;
+}
+
+footer {
+
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    min-height: 120px;
+    padding-top: 5px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.game-area {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.choice {
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: large;
+    padding-bottom: 1rem;
+}
+
+.control {
+    display: inline-block;
+    margin: 2px;
+    width: 80px;
+    height: 40px;
+}
+
+#message {
+    height: 20px;
+}
+
+.player {
+    float: left;
+    width: 50%;
+    text-decoration: underline;
+    padding-top: 3rem;
+    font-size: larger;
+}
+
+.computer {
+    float: right;
+    width: 50%;
+    text-decoration: underline;
+    padding-top: 3rem;
+    font-size: larger;
+}
