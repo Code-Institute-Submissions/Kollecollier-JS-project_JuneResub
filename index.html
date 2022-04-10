@@ -6,36 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--CSS SHEET-->
-    <link rel="stylesheet" href="/assets/images/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Guess The Number!</title>
     </head>
+
+
 <body>
+
     <Header>
-        <h2>Guess The Number!</h2>
+        <h2>Dice game!</h2>
     </Header>
 
     <section class="game-area">
         <div>
-            <p class="choice">Make a choice:</p>
-            <button aria-lable="0" data-choice="0" class="control">1</button>
-            <button aria-lable="1" data-choice="1" class="control">2</button>
-            <button aria-lable="2" data-choice="2" class="control">3</button>
-            <button aria-lable="3" data-choice="4" class="control">4</button>
-            <button aria-lable="4" data-choice="5" class="control">5</button>
-            <button aria-lable="5" data-choice="6" class="control">6</button>
+            <p class="choice">Feeling lucky?</p>
+            <button onclick="randomNumber();">Let's Go!</button>
         </div>
+
+
         <div id="messages"></div>
         <div class="player">
             <h3 class="scores">Your score: <span id="player-score">0</span></h3>
-            <img id="dice-img" src="assets/images/dice_noun_002_10624.jpg" alt="dice">
+            <img id="dice-img" src="assets/css/images/dice_noun_002_10624.jpg" alt="dice">
         </div>
+
 
         <div class="computer">
             <h3 class="scores">Computer score: <span id="computer-score">0</span></h3>
-            <img id="dice-img" src="assets/images/dice_noun_002_10624.jpg" alt="dice">
+            <img id="dice-img" src="assets/css/images/dice_noun_002_10624.jpg" alt="dice">
         </div>
     </section>
 </body>
+
+
 <footer>
 <section id="footer">
     <h3>Rules</h3>
@@ -44,6 +47,6 @@
 </footer>
 
 <!--JS-->
-<script src="assets/images/css/JS/script.js"></script>
+<script src="assets/css/JS/script.js"></script>
 
 </html>

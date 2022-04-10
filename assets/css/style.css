@@ -10,12 +10,13 @@ html {
 body {
     margin: 0;
     font-family: 'Arimo', sans-serif;
+    background: -o-linear-gradient(to right, #3f5efb, #fc466b);
 }
 
 header {
     text-align: center;
     height: 50px;
-    letter-spacing: 0.5rem;
+    padding-top: 10px;
 }
 
 footer {
