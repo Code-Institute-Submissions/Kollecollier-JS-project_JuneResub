@@ -1,5 +1,9 @@
-function randomNumber () {
+/// Doms and possible choices
 
-    console.log("random number function");
-    console.log(  Math.round(   Math.random() * 6 )    );
-}
+const buttons = document.getElementsByClassName("control");
+const playerScore = document.getElementById("player-score");
+const computerScore = document.getElementById("computer-score");
+const messages = document.getElementById("messages");
+const choices = ["1", "2", "3", "4", "5", "6"];
+
+//** Add event listners to all buttons */ */
