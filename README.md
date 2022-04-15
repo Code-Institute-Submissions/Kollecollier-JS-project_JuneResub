@@ -36,12 +36,12 @@ With this project i wanted to accomplish a clean easy way to use and navigate th
  # Testing
  - ### HTML, CSS W3C Validator
 
-   - HTML result, no found errors found as seen below!
+   - HTML result runned via [HTML, CSS W3C Validator](https://validator.w3.org/) , no found errors found as seen below!
 
 
    ![This is an image](/Images/html-check.png)
 
-   - Css results, No errors found as seen below!
+   - Css results also via [HTML, CSS W3C Validator](https://validator.w3.org/) , No errors found as seen below!
 
 
    ![This is an image](/Images/css.check.png)
@@ -54,11 +54,11 @@ With this project i wanted to accomplish a clean easy way to use and navigate th
     - Javascript
 
     # Lighthouse
-     - Desktop
+     - Desktop (results in swedish)
 
      ![This is an image](/Images/lighthouse-desktop.png)
 
-      - Mobile Device 
+      - Mobile Device (results in swedish)
 
     ![This is an image](/Images/lighthouse.mobile.png)
 
@@ -77,7 +77,7 @@ With this project i wanted to accomplish a clean easy way to use and navigate th
 
   -  Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-  The link can be found here - <Insert here when deployed>
+  The link can be found here [Git hub](https://github.com/Kollecollier/JS-project)
 
   # Credits
 
