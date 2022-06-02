@@ -3,38 +3,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="head">Make Your Choice!</header>
-  <main>
-  <div class="selections">
-    <button class="selection" data-selection="rock">✊</button>
-    <button class="selection" data-selection="paper">✋</button>
-    <button class="selection" data-selection="scissors">✌</button>
+  <div id="gameDiv">
+    <h1 class="gameplayer" id="playerText">Player: </h1>
+    <h1 class="gamepc"id="pcText">PC: </h1>
+    <h1 class="gameresult" id="resultText">Result: </h1>
+
+
+    <button class="choiceBtn">✊</button>
+    <button class="choiceBtn">✋</button>
+    <button class="choiceBtn">✌️</button>
   </div>
-  <div class="results">
-    <div>
-      You
-      <span class="result-score" data-your-score>0</span>
-    </div>
-    <div data-final-column>
-      Computer
-      <span class="result-score" data-computer-score>0</span>
-    </div>
-  </main>
-    <!-- <div class="result-selection winner">✊</div>
-    <div class="result-selection">✌</div> -->
-  </div>
-<footer>
-  <h3>Rules</h3>
-  <p>A standard Rock, Paper, Siccors game. Make your pick and hope for the win!
-    Rock beats Siccors, Paper beats Rock and scissors beats paper!
-  </p>
-</footer>
 </body>
 </html>

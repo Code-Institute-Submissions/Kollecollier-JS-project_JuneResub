@@ -1,75 +1,32 @@
-const SELECTIONS = [
-  {
-    name: 'rock',
-    emoji: '✊',
-    beats: 'scissors'
-  },
-  {
-    name: 'paper',
-    emoji: '✋',
-    beats: 'rock'
-  },
-  {
-    name: 'scissors',
-    emoji: '✌️',
-    beats: 'paper'
+const playerText = document.querySelector("#playerText");
+const pcText = document.querySelector("#pcText");
+const resultText = document.querySelector("#resultText");
+const choiceBtns = document.querySelectorAll(".choiceBtn");
+let player;
+let pc;
+let result;
+
+choiceBtns.forEach(button => addEventListener.addEventListener("click", () => {
+
+  player = button.textContent;
+  pcTurn ();
+  playerText.textContent = `Player: ${player}`;
+  pcText.textContent = `Player: ${PC}`;
+  ResultText.textContent = winner();
+}));
+
+function pcTurn(){
+  const randNum = Math.floor(Math.random() * 3) + 1;
+
+  switch(randNum){
+    case 1:
+      computer = "✊";
+      break;
+      case 2:
+      computer = "✋";
+      break;
+      case 3:
+      computer = "✌️";
+      break;
   }
-];
-
-
-const selectionButtons = document.querySelectorAll('[data-selection]');
-const finalColumn = document.querySelector('[data-final-column]');
-const computerScoreSpan = document.querySelector('[data-computer-score]');
-const yourScoreSpan = document.querySelector('[data-your-score]');
-
-function makeSelection(playerSelection) {
-  const computerSelection = randomSelection()
-  const isPlayerWinner = isWinner(playerSelection, computerSelection)
-  const isComputerWinner = isWinner(computerSelection, playerSelection)
-
-
-  addSelectionResult(computerSelection, isComputerWinner)
-  addSelectionResult(playerSelection, isPlayerWinner)
-
-  if (isPlayerWinner) incrementScore(yourScoreSpan);
-  if (isComputerWinner) incrementScore(computerScoreSpan);
 }
-
-function incrementScore(scoreSpan) {
-  scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
-}
-
-function addSelectionResult(selection, winner) {
-  const div = document.createElement('div')
-  div.innerText = selection.emoji
-  div.classList.add('result-selection')
-  if (winner) div.classList.add('winner')
-  finalColumn.after(div)
-}
-
-function isWinner(selection, opponentSelection) {
-  return selection.beats === opponentSelection.name
-}
-
-function randomSelection() {
-  const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
-  return SELECTIONS[randomIndex]
-}
-
-function initEventListeners() {
-  selectionButtons.forEach(selectionButton => {
-    selectionButton.addEventListener('click', e => {
-      const selectionName = selectionButton.dataset.selection
-      const selection = SELECTIONS.find(selection => selection.name === selectionName)
-      makeSelection(selection)
-    })
-  });
-}
-
-function onStartGame() {
-  initEventListeners();
-  yourScoreSpan.innerText = 0;
-  computerScoreSpan.innerText = 0;
-}
-
-onStartGame();
