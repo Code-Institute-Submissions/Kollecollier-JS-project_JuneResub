@@ -6,8 +6,6 @@ let player;
 let computer;
 let result;
 
-var score = 0;
-
 choiceBtns.forEach(button => button.addEventListener("click", () => {
 
   player = button.textContent;
@@ -16,6 +14,7 @@ choiceBtns.forEach(button => button.addEventListener("click", () => {
   computerText.textContent = `Computer: ${computer}`;
   resultText.textContent = checkWinner();
 }));
+
 
 function computerTurn(){
   const randNum = Math.floor(Math.random() * 3) + 1;
@@ -32,7 +31,6 @@ function computerTurn(){
       break;
   }
 }
-
 
 
 

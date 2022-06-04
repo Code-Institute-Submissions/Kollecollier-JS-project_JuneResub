@@ -11,39 +11,43 @@
 <body>
   <div>
     <h1> Welcome! </h1>
-    <h3>Select Rock, Paper or Scissors to start</h3>
+    <h3>Select Rock, Paper or Scissors to start!</h3>
   </div>
 
-  <div class="buttonarea">
-    <button class="choiceBtn">✊</button>
-    <button class="choiceBtn">✋</button>
-    <button class="choiceBtn">✌️</button>
+  <div class="buttonarea" id="gamearea">
+    <button class="choiceBtn" data-choice="0">✊</button>
+    <button class="choiceBtn" data-choice="1">✋</button>
+    <button class="choiceBtn" data-choice="2">✌️</button>
   </div>
 
-<div class="gamearea">
-    <h2 class="player">Player:</h2>
+<div>
+    <h2 class="player" id="playerText">Player:</h2>
 
     <div class="playercount">Score
       <span class="result-score">0</span>
     </div>
 
-    <h2 class="computer">Computer:</h2>
+    <h2 class="computer" id="computerText">Computer:</h2>
 
     <div class="computer-count">Score
       <span class="computer-score">0</span>
     </div>
 
 
-  <h2 class="result">Result:</h2>
+  <h2 class="result" id="resultText">Result:</h2>
 
+
+  <div class="playerscore">Player Score
+  <span class="result-score">0</span>
+  </div>
+  
   <div class="pcscore">Computer Score
   <span class="result-score">0</span>
   </div>
 
-  <div class="playerscore">Player Score
-    <span class="result-score">0</span>
-  </div>
-  
   <script src="assets/javascript/script.js"></script>
 </body>
+<footer>
+  <p>Made By Kristoffer Collier at Code Institute!</p>
+</footer>
 </html>  
