@@ -22,11 +22,25 @@ Rock paper scissors is a popular and well known game that has been around for ma
    - The game area provides you with both "Player/Computer" and "Score" counter for you and the AI.
 ![This is an image](/assets/Images/gamearea-score.png)
 
-    - The score area is coded to provide you the information on your point's that you have vs the computer's score.
-    - (add score screenprint here!)
+   - This game area also reponds and logg's you selction and the Ai relection to the screen as seen in the image below.
+   ![This is an image](/assets/Images/pick.png)
+
+   - In the Result area, You are proveided with feedback if you won the round, or if you lost the round.
+  
+      ![This is an image](/assets/Images/loser.png) 
+      ![This is an image](/assets/Images/winner.png)
+
+    - The score board as show'n below, will add a point for every correct answer guess you will make and register it!
+
+      ![This is an image](/assets/Images/score0.png)
+
+          - On a correct guess, it will add a point to the winner! (add score when coded.)
+
+      ![This is an image](/assets/Images/score0.png)
+
 
 - ### Footer Area
-  - The footer area is a simple black inline box with a small header and a small paragraph-
+  - The footer area is a simple paragrap, that provides the user with the content creator.
 
 
  # Testing
