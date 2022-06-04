@@ -6,6 +6,8 @@ let player;
 let computer;
 let result;
 
+var score = 0;
+
 choiceBtns.forEach(button => button.addEventListener("click", () => {
 
   player = button.textContent;
@@ -30,8 +32,13 @@ function computerTurn(){
       break;
   }
 }
+
+
+
+
 function checkWinner(){
   if(player == computer){
+      score = score + 1;
     return "Draw!";
   }
   else if(computer == "✊"){

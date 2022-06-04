@@ -5,25 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Rock, Paper, Scissors!</title>
 </head>
 <body>
-  <div id="gamediv">
-    <h1 class="gameText" id="playerText">Player: </h1>
-    <h1 class="gameText"id="computerText">Computer: </h1>
-    <h1 class="gameTe" id="resultText">Result: </h1>
+  <div>
+    <h1> Welcome! </h1>
+    <h3>Select Rock, Paper or Scissors to start</h3>
+  </div>
 
+  <div class="buttonarea">
     <button class="choiceBtn">✊</button>
     <button class="choiceBtn">✋</button>
     <button class="choiceBtn">✌️</button>
   </div>
 
+<div class="gamearea">
+    <h2 class="player">Player:</h2>
+
+    <div class="playercount">Score
+      <span class="result-score">0</span>
+    </div>
+
+    <h2 class="computer">Computer:</h2>
+
+    <div class="computer-count">Score
+      <span class="computer-score">0</span>
+    </div>
+
+
+  <h2 class="result">Result:</h2>
+
+  <div class="pcscore">Computer Score
+  <span class="result-score">0</span>
+  </div>
+
+  <div class="playerscore">Player Score
+    <span class="result-score">0</span>
+  </div>
+  
   <script src="assets/javascript/script.js"></script>
 </body>
-<footer>
-  <section id="footer">
-      <h3>Rules</h3>
-      <p>Simple Rock,Paper,Scissors game!</p>
-  </section>
-  </footer>
-</html>
+</html>  
