@@ -8,6 +8,10 @@ body {
     margin: auto;
 }
 
+#main {
+    overflow: hidden;
+}
+
 
 /* Header style*/
 h1 {
@@ -46,7 +50,7 @@ h3 {
     justify-content: center;
 }
 
-/* Player styling */
+/* Player & Computer styling */
 .player {
     font-size: 1.5rem;
     text-align: center;
@@ -54,10 +58,6 @@ h3 {
     letter-spacing: 1rem;
     padding-bottom: 25px;
 }
-
-
-
-/* computer styling */
 
 .computer {
     font-size: 1.5rem;
@@ -67,35 +67,33 @@ h3 {
     padding-bottom: 25px;
 }
 
-/* Result area*/
+
+/* Score area*/
 
 .result {
     letter-spacing: 00.5rem;
     color: #fafafa;
 }
 
+.playerscore {
+    color: black;  
+    padding-bottom: 25px;
+    padding-top: 40px;
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+}
+
 
 .pcscore {
-    color: #fafafa;
+    color: black;
     padding-bottom: 50px;
     padding-top: 25px;
     letter-spacing: 0.3rem;
+    font-size: 1.5rem;
 }
 
-.playerscore {
-    color: #fafafa;
-    padding-bottom: 25px;
-    letter-spacing: 0.3rem;
-}
+/* Anchor and hover style*/
 
-p {
-
-    bottom:0;
-    width:100%;
-    font-weight: 300;
-    font-size:15px;
-    padding-top: 25px;
-}
 a {
     color: black;
 }
@@ -104,21 +102,17 @@ a:hover {
     color: #fafafa;
 }
 
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
 /* Media querys*/
 
-@media (max-width: 375px) {
-    #gamearea {
-           margin: 10px auto;
-       }
-       p {
-           font-size: 1rem;
-       }
-   
-       img {
-           width: 100px;
-       }
-   
-       h1 {
-           font-size: 2rem;
-       }
-   }
+@media (max-width: 300px) {
+    #main {
+        margin: 10px auto;
+    }
+}
