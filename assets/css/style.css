@@ -34,7 +34,7 @@ h3 {
     outline: none;
     cursor: pointer;
     font-size: 3.5rem;
-    transform: 100ms;
+    transform: rotate(1turn);
 } 
 
 
