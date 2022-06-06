@@ -88,18 +88,9 @@ h3 {
     padding-bottom: 25px;
 }
 
-
-.pcscore {
-    color: #fafafa;
-    padding-bottom: 50px;
-    padding-top: 25px;
-    letter-spacing: 0.3rem;
-}
-
-.playerscore {
-    color: #fafafa;
-    padding-bottom: 25px;
-    letter-spacing: 0.3rem;
+.scores {
+    text-align: center;
+    display: inline-block; 
 }
 
 p {
